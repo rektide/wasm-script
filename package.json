@@ -1,0 +1,22 @@
+{
+	"name": "wasm-script",
+	"version": "1.0.0",
+	"description": "",
+	"main": "wasm-script.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://archive.voodoowarez.com/wasm-script"
+	},
+	"keywords": [],
+	"author": "rektide de la faye",
+	"license": "X11",
+	"dependencies": {
+		"base64-arraybuffer": "^0.1.5",
+		"context-runner": "^1.0.0",
+		"global-object": "^1.0.0",
+		"object-assign-all": "^1.0.1"
+	}
+}
