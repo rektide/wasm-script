@@ -1,15 +1,8 @@
-import { decode as decodeB64} from "base64-arraybuffer"
 import globalObject from "global-object"
 import objectAssignAll from "object-assign-all"
 import contextRunner from "context-runner"
 
 export function fetchBytes( src){
-	if( !src){
-		return Promise.reject()
-	}
-	if( src.slice( 0, 5)=== "data:"){
-		return decodeB64( src.slice( 5))
-	}
 	return fetch( src).then( response => response.arrayBuffer())
 }
 
@@ -35,16 +28,6 @@ export class WasmScriptElement extends HTMLElement{
 				customSections: self=> self.instance.customSections
 			}
 		})
-		//this.fetch= fetch( src).then( response => response.arrayBuffer())
-		//if( this.imports&& this.imports.then){
-		//	this,imports.then( imports=> this.imports= imports)
-		//}
-		//this.module= this.fetch.then( bytes => WebAssembly.compile( bytes))
-		//this.instance= this.module.then( module=> WebAssembly.instantiate( module))
-		//this.exports= {}
-		//this.instance.then( instance=> {
-		//	objectAssignAll( this.exports, instance.exports)
-		//})
 	}
 	attributeChangedCallback( attrName, oldVal, newVal){
 		this._resetState()

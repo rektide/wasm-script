@@ -1,7 +1,7 @@
 {
 	"name": "wasm-script",
-	"version": "1.0.0",
-	"description": "",
+	"version": "1.0.1",
+	"description": "Declarative WebAssembly Instance/Module Custom-Element",
 	"main": "wasm-script.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +14,6 @@
 	"author": "rektide de la faye",
 	"license": "X11",
 	"dependencies": {
-		"base64-arraybuffer": "^0.1.5",
 		"context-runner": "^1.0.0",
 		"global-object": "^1.0.0",
 		"object-assign-all": "^1.0.1"

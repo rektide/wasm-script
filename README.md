@@ -1,6 +1,6 @@
 # Wasm Script
 
-> Declarative WebAssembly Custom-Element
+> Declarative WebAssembly Instance/Module Custom-Element
 
 I would like to see a WebAssemblyModuleScriptElement, which is an instantiation of a module.
 
